@@ -3,20 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para los archivos de hojas de estilo - CSS -->
+    <!-- 1. Estilos mediante un archivo externo -->
+    <link rel="stylesheet" href="./index.css">
     <title>Módulo 01 - Introducción HTML</title>
+
+    <!-- 2. Estilos dentro del archivo html -->
+    <style>
+        h1{
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
+    <!-- Cabecera de la Página Web -->
+    <!-- Etiquetas semánticas -->
     <header>
-
-
+        <!-- Barra de Navegación -->
+        <nav>
+            <!-- Lista desordenada -->
+            <ul>
+                <!-- ítems de las listas -->
+                <li>
+                    <a href="./index.html"> <!-- Ruta Relativa -->
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <!-- Ancla: navegar las páginas o archivos -->
+                    <a href="./productos.html">
+                        Productos
+                    </a>
+                </li>
+                <li>
+                    <a href="./formulario.html">
+                        Formulario
+                    </a>
+                </li>
+                <li>
+                    <!-- Ruta absoluta -->
+                    <a 
+                        href="https://digitalers.educacionit.com/Identity/Account/Login?ReturnUrl=%2F"
+                        target="_blank"
+                    > <!-- abre la página en una nueva pestaña -->
+                        Digitales EIT
+                    </a>
+                </li>
+            </ul>
+        </nav>        
     </header>
-    
-    <nav>
 
-    </nav>
 
     <main>
+
+        <h1>
+            Estilo en la Página HTML
+        </h1>
+
+        <!-- 3. Estilo en línea o inline -->
+        <p style="color:blue; font-size: 25px;">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum ipsam quidem tempore neque officia maxime, similique, commodi quis nemo quos distinctio vero natus at beatae non omnis rerum molestias inventore!
+        </p>
 
 
     </main>
