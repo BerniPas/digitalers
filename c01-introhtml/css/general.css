@@ -1,0 +1,14 @@
+
+
+/* selector */
+body{
+    background-color: #f2f2f2;
+}
+
+/* selector de class - lo invoco con un . y el nombre de la clase */
+.iconoredes{
+    /* el ancho de un elemento */
+    width: 100px;
+    /* el alto del elemento */
+    height: 100px;
+}

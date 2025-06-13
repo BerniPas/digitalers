@@ -1,0 +1,25 @@
+
+
+
+/* selector por elemento: estilos a TODOS  */
+h1{
+    background-color: aqua;
+}
+
+.rojo{
+    background-color: red;
+    color: #f2f2f2;
+}
+
+.cursiva{
+    font-family: cursive;
+}
+
+#unico{
+    font-style: oblique;
+}
+
+#otrounico{
+    background-color: chartreuse;
+}
+
