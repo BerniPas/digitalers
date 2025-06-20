@@ -1,0 +1,21 @@
+
+
+body{
+    background-color: rgb(188, 209, 238);
+}
+
+li{ /* regla de estilos para los item list */
+    list-style: none; /* quitamos los estilos a las listas */
+    float: right; /* flotamos los elementos a la derecha - método antiguo */
+    margin-right: 25px; /* damos un marge derecho de 25 px */
+    border-top: 3px solid black; /* agregamos un borde arriba del contenido */
+    padding-top: 5px; /* agregamos un relleno interno al contenido */
+    padding-right: 5px; /* agregamos un relleno interno al contenido */
+    padding-bottom: 5px; /* agregamos un relleno interno al contenido */
+    padding-left: 5px; /* agregamos un relleno interno al contenido */
+    padding: 5px; /* agrega el relleno a todos los lados del elem */
+}
+
+a{
+    text-decoration: none;/* quitamos el subrayado a las anclas */
+}
