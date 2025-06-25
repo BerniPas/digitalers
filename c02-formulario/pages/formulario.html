@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/diseno-web.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">HOMEWORK</a>
+                </li>
+                <li>
+                    <a href="">HOMEWORK</a>
+                </li>
+                <li>
+                    <a href="">HOMEWORK</a>
+                </li>
+                <li>
+                    <a href="./formulario.html">FORMULARIO</a>
+                </li>
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Formulario
+        </h1>
+
+        <!-- etiquta del formulario -->
+        <form action="formulario.js" method="post">
+            <!-- al archivo donde se envían los datos -->
+            <!-- post => método http para envío de datos -->
+
+            <label for="nombre">Nombre: </label> <!-- guia para el user -->
+            <input type="text" name="nombre" id="nombre" placeholder="PEPE PEREZ"> <!-- tipo texto -->
+            <br><!-- salto de linea -->
+
+            <label for="edad" id="labeledad">Edad: </label>
+            <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100">
+
+            <label for="nacimiento">Fecha de Nacimiento: </label>
+            <input type="date" name="nacimiento" id="nacimiento">
+            <br>
+            
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" minlength="5" maxlength="8">
+            <!-- longitud mínima de 5 y máxima de 8 caracteres -->
+            <br>
+            
+            <label for="imagen">Foto de Perfil: </label>
+            <input type="file" name="imagen" id="imagen"> <!-- subir archivos -->
+            <br>
+
+            
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+        <h2>
+            Elemento en Bloque
+        </h2>
+        <h2>
+            Elemento en Bloque
+        </h2>
+    </main>
+    
+</body>
+</html>

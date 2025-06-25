@@ -19,3 +19,11 @@ li{ /* regla de estilos para los item list */
 a{
     text-decoration: none;/* quitamos el subrayado a las anclas */
 }
+
+#edad{/* se muestra en bloque a los elementos en línea */
+    display: block;
+}
+
+h2{/* se muesetra en linea los elementos en bloque */
+    display: inline;
+}
