@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/diseno-web.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
+    <!-- Tipografía de Google Fonts: Opción 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Formulario</title>
 </head>
 <body>
@@ -18,7 +22,7 @@
                     <a href="">HOMEWORK</a>
                 </li>
                 <li>
-                    <a href="">HOMEWORK</a>
+                    <a href="./fonts.html">FONTS</a>
                 </li>
                 <li>
                     <a href="./formulario.html">FORMULARIO</a>
@@ -31,36 +35,57 @@
     </header>
 
     <main>
-        <h1>
+        <h1 class="roboto"><!-- tipografía de Google Fonts -->
             Formulario
         </h1>
 
         <!-- etiquta del formulario -->
-        <form action="formulario.js" method="post">
+        <form action="#" method="post">
             <!-- al archivo donde se envían los datos -->
             <!-- post => método http para envío de datos -->
 
             <label for="nombre">Nombre: </label> <!-- guia para el user -->
-            <input type="text" name="nombre" id="nombre" placeholder="PEPE PEREZ"> <!-- tipo texto -->
+            <input type="text" name="nombre" id="nombre" placeholder="PEPE PEREZ" required> <!-- tipo texto -->
             <br><!-- salto de linea -->
 
             <label for="edad" id="labeledad">Edad: </label>
-            <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100">
+            <input type="number" name="edad" id="edad" placeholder="25" min="0" max="100" step="3">
+            <!-- step: paso con el que se suma la edad, por defecto de uno en uno -->
 
             <label for="nacimiento">Fecha de Nacimiento: </label>
-            <input type="date" name="nacimiento" id="nacimiento">
+            <input type="date" name="nacimiento" id="nacimiento" required>
             <br>
             
             <label for="password">Password: </label>
             <input type="password" name="password" id="password" minlength="5" maxlength="8">
             <!-- longitud mínima de 5 y máxima de 8 caracteres -->
             <br>
-            
-            <label for="imagen">Foto de Perfil: </label>
-            <input type="file" name="imagen" id="imagen"> <!-- subir archivos -->
+
+            <label for="mes">Mes: </label>
+            <input type="month" name="mes" id="mes" required> <!-- dato obligatorio -->
             <br>
 
-            
+            <label for="senama">Semana: </label>
+            <input type="week" name="samana" id="semana">
+            <br>
+
+            <label for="telefono">Teléfono: </label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}"><!-- lo que está permitido completar -->
+            <br>
+
+            <label for="email">Email </label>
+            <input type="email" name="email" id="email" >
+            <br>
+
+            <label for="provincia">Provincia </label>
+            <select name="provincia" id="provincia">
+                <option value="">**Selecciona una Opción**</option>
+                <option value="Cordoba">Córdoba</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+            </select>
+            <br>
 
 
 
@@ -70,14 +95,29 @@
 
 
 
+            <label for="imagen">Foto de Perfil: </label>
+            <input type="file" name="imagen" id="imagen" accept=".jpg, .png, .jpeg, .pdf" multiple> <!-- subir más de un archivo, tipos de archivos permitidos -->
+            <br>
+
+            <div class="botones">
+                <button type="submit"><!-- botón para envío de datos -->
+                    Enviar Datos
+                </button>
+    
+                <button type="reset"><!-- botón que limpia los inputs -->
+                    Borrar Datos
+                </button>
+            </div>
 
 
         </form>
 
-        <h2>
+        <br>
+
+        <h2 class="roboto">
             Elemento en Bloque
         </h2>
-        <h2>
+        <h2 class="roboto">
             Elemento en Bloque
         </h2>
     </main>

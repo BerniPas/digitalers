@@ -1,29 +1,87 @@
 
+/* importar un estilo para la tipografía: Opción 2 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
     background-color: rgb(188, 209, 238);
 }
 
-li{ /* regla de estilos para los item list */
-    list-style: none; /* quitamos los estilos a las listas */
-    float: right; /* flotamos los elementos a la derecha - método antiguo */
-    margin-right: 25px; /* damos un marge derecho de 25 px */
-    border-top: 3px solid black; /* agregamos un borde arriba del contenido */
-    padding-top: 5px; /* agregamos un relleno interno al contenido */
-    padding-right: 5px; /* agregamos un relleno interno al contenido */
-    padding-bottom: 5px; /* agregamos un relleno interno al contenido */
-    padding-left: 5px; /* agregamos un relleno interno al contenido */
-    padding: 5px; /* agrega el relleno a todos los lados del elem */
+li {
+    /* regla de estilos para los item list */
+    list-style: none;
+    /* quitamos los estilos a las listas */
+    float: right;
+    /* flotamos los elementos a la derecha - método antiguo */
+    margin-right: 25px;
+    /* damos un marge derecho de 25 px */
+    border-top: 3px solid black;
+    /* agregamos un borde arriba del contenido */
+    padding-top: 5px;
+    /* agregamos un relleno interno al contenido */
+    padding-right: 5px;
+    /* agregamos un relleno interno al contenido */
+    padding-bottom: 5px;
+    /* agregamos un relleno interno al contenido */
+    padding-left: 5px;
+    /* agregamos un relleno interno al contenido */
+    padding: 20px;
+    /* agrega el relleno a todos los lados del elem */
 }
 
-a{
-    text-decoration: none;/* quitamos el subrayado a las anclas */
+a {
+    text-decoration: none;
+    /* quitamos el subrayado a las anclas */
 }
 
-#edad{/* se muestra en bloque a los elementos en línea */
+#edad {
+    /* se muestra en bloque a los elementos en línea */
     display: block;
 }
 
-h2{/* se muesetra en linea los elementos en bloque */
+h2 {
+    /* se muesetra en linea los elementos en bloque */
     display: inline;
+}
+
+.botones {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+input {
+    background-color: beige;
+    width: 250px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+select {
+    background-color: beige;
+    width: 250px;
+    height: 25px;
+}
+
+main {
+    text-align: center;
+}
+
+
+.roboto {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
