@@ -48,3 +48,16 @@ console.log(nombrE);
 
 console.log('=========================================================');
 
+
+// Ejecución de JS con el comando node nombre del archivo. Ej node index.js
+// No se ejecuta JS en la terminal cuando tiene funcionalidades del navegador
+
+
+// constante: no cambia el valor durante la ejecuciòn de la aplicaciòn
+const DNI = 123456789;
+
+// las constantes no se pueden reasignar
+//DNI = 254544654635; // tira un error en ejecuciòn 
+
+
+
