@@ -1,0 +1,65 @@
+.padre{
+    display: flex;
+    flex-wrap: wrap;
+  /*   flex-direction: column; */
+    justify-content: space-evenly;
+/*     align-items: center; */
+/*     width: 600px; */
+}
+
+.hijo{
+    text-align: center;
+    background-color: rgb(218, 238, 238);
+    margin-top: 10px;
+}
+
+img{
+    width: 350px;
+    height: 350px;
+}
+
+button{
+    background-color: green;
+    padding: 20px;
+    color: white;
+    width: 150px;
+}
+
+.hijo a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+/* #vermas:hover{
+    width: 450px;
+    height: 450px;
+} */
+
+/* Medidas de quibre de pantallas */
+@media (min-width: 576px) { 
+    .padre{
+        background-color: red;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .hijo{
+        background-color: beige;
+    }
+}
+
+
+@media (min-width: 992px) { 
+    .padre{
+        background-color: yellow;
+    }
+}
+
+
+/* @media (min-width: 1200px) { ... }
+
+
+@media (min-width: 1400px) { ... } */
+
