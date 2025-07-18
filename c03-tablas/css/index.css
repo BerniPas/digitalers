@@ -1,0 +1,74 @@
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f0f2f5;
+        padding: 30px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    caption {
+        caption-side: top;
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    thead {
+        background-color: #1976d2;
+        color: white;
+    }
+
+    tfoot {
+        background-color: #424242;
+        color: white;
+        font-style: italic;
+    }
+
+    th,
+    td {
+        border: 1px solid #ccc;
+        padding: 12px;
+        text-align: left;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    tr:hover {
+        background-color: #837f7f;
+    }
+
+    td[data-email] {
+        font-family: monospace;
+        color: #2e7d32;
+    }
+
+    td[title] {
+        cursor: help;
+        text-decoration: underline dotted;
+    }
+
+    img.profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+    a.social-link {
+        color: #1976d2;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    a.social-link:hover {
+        text-decoration: underline;
+    }

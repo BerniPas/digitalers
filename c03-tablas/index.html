@@ -1,19 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Tabalas en HTML</title>
+    <title>Tablas en HTML</title>
 </head>
+
 <body>
-    
 
 
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <h2>
+            Tablas y atributos en HTML
+        </h2>
 
 
+        <!-- tablas -->
+        <table id="tabla-usuarios" class="tabla-datos" summary="Tabla con información de usuarios">
+            <caption>Lista de Usuarios Registrados</caption>
 
+            <thead>
+                <tr>
+                    <th scope="col" title="Foto de perfil del usuario">Foto</th>
+                    <th scope="col" title="Primer nombre del usuario">Nombre</th>
+                    <th scope="col" title="Apellido del usuario">Apellido</th>
+                    <th scope="col" title="Correo electrónico del usuario">Email</th>
+                    <th scope="col" title="Enlace a red social">Red Social</th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Foto de Lucía" class="profile">
+                    </td>
+                    <td title="Nombre del usuario">Lucía</td>
+                    <td title="Apellido del usuario">Gómez</td>
+                    <td data-email="true">lucia.gomez@example.com</td>
+                    <td>
+                        <a href="https://twitter.com/lucia_gomez" class="social-link" target="_blank">Twitter</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Foto de Mateo" class="profile">
+                    </td>
+                    <td title="Nombre del usuario">Mateo</td>
+                    <td title="Apellido del usuario">Fernández</td>
+                    <td data-email="true">mateo.fernandez@example.com</td>
+                    <td><a href="https://linkedin.com/in/mateofernandez" class="social-link"
+                            target="_blank">LinkedIn</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Foto de Sofía" class="profile">
+                    </td>
+                    <td title="Nombre del usuario">Sofía</td>
+                    <td title="Apellido del usuario">Martínez</td>
+                    <td data-email="true">sofia.martinez@example.com</td>
+                    <td>
+                        <a href="https://instagram.com/sofia.martinez" class="social-link" target="_blank">Instagram</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Foto de Tomás" class="profile">
+                    </td>
+                    <td title="Nombre del usuario">Tomás</td>
+                    <td title="Apellido del usuario">Pérez</td>
+                    <td data-email="true">tomas.perez@example.com</td>
+                    <td>
+                        <a href="https://facebook.com/tomas.perez" class="social-link" target="_blank">Facebook</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Foto de Valentina" class="profile"></td>
+                    <td title="Nombre del usuario">Valentina</td>
+                    <td title="Apellido del usuario">Rodríguez</td>
+                    <td data-email="true">valentina.rodriguez@example.com</td>
+                    <td>
+                        <a href="https://twitter.com/valentina_r" class="social-link" target="_blank">Twitter</a>
+                    </td>
+                </tr>
+
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de usuarios: 5</td>
+                </tr>
+            </tfoot>
+
+    </main>
+
+    <footer>
+
+    </footer>
 
     <script src="./js/index.js"></script>
 </body>
+
 </html>
