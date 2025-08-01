@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* bootstrap: container 80%  */
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    margin: 35px;
+    padding: 50px;
+}
+
+.contenedor-grid{
+    /* para trabajar con tipo cuadriculas */
+    display: grid;
+    /* determino la cantidad de columas */
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* grid-template-columns: 300px 600px 80px 250px; */
+    /* determino la cantidad de filas */
+    grid-template-rows: 800px 800px;
+}
+
+.data{
+    width: 150px;
+    height: 150px;
+}
+
+.items-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
