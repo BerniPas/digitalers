@@ -22,6 +22,7 @@ h1{
     /* determino la cantidad de columas */
     grid-template-columns: 1fr 1fr 1fr; 
     /* grid-template-columns: 300px 600px 80px 250px; */
+    /* grid-template-columns: repeat(12, 1fr); */
     /* determino la cantidad de filas */
     grid-template-rows: 800px 800px;
 }

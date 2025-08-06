@@ -1,0 +1,8 @@
+
+
+1. Crear una página index.html
+2. Agregar los links de bootstrap
+3. Crear un pequeño sitio con Nav - Main - Footer
+4. Compartirlo en clase - GitHub
+
+
