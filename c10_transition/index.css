@@ -1,0 +1,75 @@
+
+
+/* Estructura básica de transition */
+/*
+.selector{
+    transition: valor duración tipo-retardo;
+} 
+*/
+
+.caja{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    transition: background-color 1s ease; /* default */
+    /* inicia lento - acelera - termina lento */
+}
+
+.caja:hover{
+    background-color: red;
+}
+
+.cajaDos{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    transition: background-color 1s linear;
+    /* es constante */
+}
+
+.cajaDos:hover{
+    background-color: yellow;
+}
+
+.cajaTres{
+    width: 400px;
+    height: 400px;
+    background-color: purple;
+    transition: background-color 1s ease-in-out;
+    /* inicia lento - acelera al final */
+}
+
+.cajaTres:hover{
+    background-color: pink;
+}
+
+.cajaCuatro{
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    /* dividimos las propiedades de transicion */
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s; /* espera para el inicio */
+    /*  comienza lento y acelera al final*/
+}
+
+.cajaCuatro:hover{
+    background-color: brown;
+}
+
+.cajaCinco{
+    width: 400px;
+    height: 400px;
+    background-color: teal;
+    transition: background-color 1s ease-out;
+    /*  comienza rápido y termina lento */
+}
+
+.cajaCinco:hover{
+    background-color: lime;
+}
+
+/* no olvidar la duración: no hay animación */
+/* si no seteamos el delay, inicia al instante */
