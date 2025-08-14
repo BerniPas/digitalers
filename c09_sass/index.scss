@@ -1,0 +1,15 @@
+
+
+/* 1. Podemos crear variables en SASS */
+$color: #92e0ea;
+$font-stack: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace;
+
+body {
+    background-color: $color;
+    font-family: $font-stack;
+} 
+
+
+
+
+

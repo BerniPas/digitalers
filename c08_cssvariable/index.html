@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./variaables.css">
+    <title>Variables CSS</title>
+</head>
+<body class="tema-claro" style="text-align: center;">
+
+    <h1>
+        Ejercicio de Tema Claro y Oscuro con Variables de CSS 
+    </h1>
+
+    <p>
+        Las variables cambian según el tema seleccionado.
+    </p>
+
+    <button class="btn">
+        Botón Principal
+    </button>
+    
+    <div>
+        <label for="tema">Cambiar Tema</label>
+        <input type="checkbox" name="tema" id="tema" onclick="
+            document.body.classList.toggle('tema-oscuro');
+            document.body.classList.toggle('tema-claro');"
+        >
+    </div>
+</body>
+</html>
