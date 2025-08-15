@@ -1,7 +1,84 @@
+/* Importamos el archivo de prueba.scss */
+/*1. Creamos variables para el ancho y el alto */
+/* root: { --ancho-caja: 400px; } */
+.caja {
+  width: 400px; /* reemplazamos el valor por las variables */
+  height: 400px;
+  background-color: blue;
+  transition: background-color 1s ease; /* default */
+  /* inicia lento - acelera - termina lento */
+}
+
+.caja:hover {
+  background-color: red;
+}
+
+.cajaDos {
+  width: 400px;
+  height: 400px;
+  background-color: green;
+  transition: background-color 1s linear;
+  /* es constante */
+}
+
+.cajaDos:hover {
+  background-color: yellow;
+}
+
+.cajaTres {
+  width: 400px;
+  height: 400px;
+  background-color: purple;
+  transition: background-color 1s ease-in-out;
+  /* inicia lento - acelera al final */
+}
+
+.cajaTres:hover {
+  background-color: pink;
+}
+
+.cajaCuatro {
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+  /* dividimos las propiedades de transicion */
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 2s;
+}
+
+.cajaCuatro:hover {
+  background-color: brown;
+}
+
+.cajaCinco {
+  width: 400px;
+  height: 400px;
+  background-color: teal;
+  transition: background-color 1s ease-out;
+}
+
+.cajaCinco:hover {
+  background-color: lime;
+}
+
 /* 1. Podemos crear variables en SASS */
 body {
   background-color: #92e0ea;
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono", "Droid Sans Mono", monospace;
+}
+
+.cajaHome {
+  width: 400px; /* reemplazamos el valor por las variables */
+  height: 400px;
+  background-color: blue;
+  transition: background-color 1s ease; /* default */
+  /* inicia lento - acelera - termina lento */
+}
+
+.cajaHome:hover {
+  background-color: lime;
 }
 
 /*# sourceMappingURL=index.css.map */

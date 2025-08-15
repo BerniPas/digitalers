@@ -1,4 +1,6 @@
 
+/* Importamos el archivo de prueba.scss */
+@import "_prueba.scss";
 
 /* 1. Podemos crear variables en SASS */
 $color: #92e0ea;
@@ -8,6 +10,17 @@ body {
     background-color: $color;
     font-family: $font-stack;
 } 
+
+.cajaHome{
+    width: $ancho-caja; /* reemplazamos el valor por las variables */
+    height: $alto-caja;
+    background-color: blue;
+    transition: $propiedad-caja 1s ease; /* default */
+    /* inicia lento - acelera - termina lento */
+}
+.cajaHome:hover{
+    background-color: lime;
+}
 
 
 

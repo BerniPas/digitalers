@@ -1,0 +1,11 @@
+
+
+1. Seleccionar algún archivo de html y css
+2. Vamos crear un archivo index.scss
+3. Pasar el código css que tenemos a sass
+4. Podemos importar el codigo de otro archivo sass
+
+
+5. Entrega de la tarea 21/08/2025
+
+
