@@ -33,7 +33,7 @@ function login(e) {
     //3. procesamos los datos
     if(email == "admin@gmail.com" && password == "12345678") {
         alert("Bienvenido Admin Pepe");
-        location.href = "dom.html";
+        location.href = "productos.html";
     }else{
         alert("Contraseña o Email incorrectos");
         location.href="error.html";
