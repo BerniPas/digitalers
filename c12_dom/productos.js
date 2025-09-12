@@ -53,6 +53,12 @@ botonGuardar.addEventListener("click", function (e) {
 
     let precioHelp = document.getElementById("precioHelp");
 
+    // si quiero puedo agregar los estilos de css con js
+    precioHelp.style.color = "red";
+    precioHelp.style.fontSize = "10px";
+    precioHelp.className = "form-text";
+    precioHelp.className += " text-danger";
+
     // validamos que los campos no estén vacíos
     if (nombreProducto === "" || isNaN(precioProducto) || isNaN(stockProducto) || descripcionProducto === "") {
         alert("Por favor, complete todos los campos del formulario.");
@@ -102,3 +108,15 @@ const limpiarFormulario = () => {
     document.getElementById("stockProducto").value = "";
     document.getElementById("descripcionProducto").value = "";
 };
+
+
+// capturamos elementos inputs para hacer focus
+let inputs = document.getElementsByTagName("input"); //arreglo de inputs
+
+console.log(inputs);
+
+let label = document.querySelectorAll("label"); //arreglo de labels
+
+console.log(label);
+
+
