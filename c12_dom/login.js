@@ -32,8 +32,19 @@ function login(e) {
 
     //3. procesamos los datos
     if(email == "admin@gmail.com" && password == "12345678") {
-        alert("Bienvenido Admin Pepe");
-        location.href = "productos.html";
+        /* alert("Bienvenido Admin Pepe"); */
+
+        let irPagina = Swal.fire("Bienvenido Admin Pepe!");       
+        
+        
+        if(irPagina) {
+            /* set timeout */
+            //setTimeout( lo que tiene que hacer , tiempo en milisegundos);
+            setTimeout(() => {
+                location.href="productos.html";
+            }, 2000);
+        }
+
     }else{
         alert("Contraseña o Email incorrectos");
         location.href="error.html";
