@@ -6,7 +6,14 @@ let root = document.getElementById("root");
 let nav = document.createElement("nav");
 
 // 3. le agregamos las clases de bootstrap a la barra de navegacion
-nav.className = "navbar navbar-expand-lg bg-body-tertiary";
+nav.className = "navbar navbar-expand-lg";
+
+// Cambiamos el color de la barra de navegacion y el color de los enlaces al hacer click
+nav.addEventListener("click", () => {
+    nav.style.backgroundColor = "#212529";
+    a.style.color = "white";
+    b.style.color = "white";
+});
 
 //4. Creamos el ul dentro de la barra de navegacion
 let ul = document.createElement("ul");
