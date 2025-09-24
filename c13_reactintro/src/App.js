@@ -1,8 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 import Navegacion from './Navegacion/Navegacion.jsx';
+import Footer from './Componentes/Footer.js';
 
 function App() {
+
+  let nombre = "Juan";
+
+/*   let h1 = document.createElement("h1");
+  h1.innerText = `Hola, ${nombre} bienvenidos a React! Soy ${nombre}`;
+
+  document.body.appendChild(h1); */
+
+
   return (
     <div className="App">
 
@@ -16,6 +26,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+
+        <h1>
+          Hola, { nombre } bienvenidos a React!
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -24,7 +38,13 @@ function App() {
         >
           Learn React
         </a>
+
+
       </header>
+
+
+        {/* Llamamos al componente Footer */}
+        <Footer />
     </div>
   );
 }
