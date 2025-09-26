@@ -40,7 +40,6 @@ const Footer = () =>{
             {/* </React.Fragment> */}
         </>
 
-
     )
 }
 

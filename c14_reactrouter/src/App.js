@@ -1,24 +1,26 @@
 import logo from './assets/logo.svg';
+import Footer from './Componentes/Footer';
+import Nav from './Componentes/Nav';
 import './css/App.css';
+
+/* Paso 4: importo la configuración de las rutas */
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home';
+
+/* Paso 5: importar las páginas o componentes */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />{/* componente de navegacion */}
+
+      {/* configuracion de rutas */}
+      <Routes>
+        <Route path='/home' element={<Home />} />
+      </Routes>
+
+      <Footer />{/* componente de pie de pagina */}
+    </>
   );
 }
 
