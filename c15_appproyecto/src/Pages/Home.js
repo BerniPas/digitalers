@@ -2,6 +2,8 @@ import imagenUno from '../assets/img1.png'
 import imagenDos from '../assets/img2.png'
 import imagenTres from '../assets/img3.png'
 
+import { Link } from 'react-router-dom'
+
 
 
 const Home = () => {
@@ -12,7 +14,8 @@ const Home = () => {
                 <div className="cuarenta">
                     <h1>Creando Experencia y Marca</h1>
 
-                    <p>Agencia Digital al servicio del cliente y de su marca.
+                    <p>
+                        Agencia Digital al servicio del cliente y de su marca. Completa este <Link to="/formulario">Formulario</Link> para contactarnos.
                     </p>
                 </div>
                 <div>
