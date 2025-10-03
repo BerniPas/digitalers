@@ -16,6 +16,10 @@ const Home = () => {
 
                     <p>
                         Agencia Digital al servicio del cliente y de su marca. Completa este <Link to="/formulario">Formulario</Link> para contactarnos.
+
+                        {/* 
+                        Utilizar el componente Boton con sus props para mostrar el formulario
+                        */}
                     </p>
                 </div>
                 <div>

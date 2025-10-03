@@ -14,6 +14,7 @@ const Navegacion = () => {
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/testimonios">Testimonios</NavLink>
                 <NavLink to="/formulario">Formulario</NavLink>
+                <NavLink to="/login">Login</NavLink>
             </div>
 
             <span className="icon-menu" onClick="abrir();"></span>
