@@ -95,3 +95,8 @@ function Formulario() {
 }
 
 export default Formulario;
+
+/* Tarea:
+- modificar el formulario para cargar productos, crear estados para cada campo
+- crear un componente admin
+*/
