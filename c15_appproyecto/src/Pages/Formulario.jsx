@@ -6,7 +6,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 
-function FormExample() {
+function Formulario() {
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
@@ -94,4 +94,4 @@ function FormExample() {
     );
 }
 
-export default FormExample;
+export default Formulario;

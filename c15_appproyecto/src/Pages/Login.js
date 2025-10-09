@@ -6,7 +6,10 @@ import axios from 'axios';
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom';
 
-
+function sumar(a, b) {
+    let resultado = a + b;
+    return resultado;
+}
 
 
 function Login() {
@@ -57,19 +60,24 @@ function Login() {
 
 
         /* axios */
-        axios.post('https://educacioit.com/login', {
+        axios.post('http://localhost:9000/login', {
             email: email,
             password: password,
             comentarios: comentarios
         })
             .then(function (response) {
+                /* imprimo en consola la respuesta */
                 console.log(response);
+
+                /* guardamos los datos del ususario en el localStorage */
+                localStorage.setItem('userData', JSON.stringify(email));
                 Swal.fire({
                     title: "Datos enviados correctamente",
                     icon: "success",
                     draggable: true
                 });
-                navigate('/admin');
+
+                navigate('/formulario');
             })
             .catch(function (error) {
                 /* Data del error al user nativo */
@@ -82,7 +90,7 @@ function Login() {
                     draggable: true
                 });
                 console.log(error);
-                navigate('/error');
+                navigate('/login'); /* /error */
             });
 
         limpiarDatos();
@@ -139,6 +147,10 @@ function Login() {
                     onClick={limpiarDatos}
                 />
             </div>
+
+            <h2 className='mt-5 text-center'>
+                Resultado de la suma: {sumar(5, 3)}
+            </h2>
         </Form>
     );
 }
